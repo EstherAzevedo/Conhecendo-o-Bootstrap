@@ -7,7 +7,15 @@
   <title>Bootstrap demo</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,6 +23,18 @@
   <header>
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-fill" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+          <path fill-rule="evenodd"
+            d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
+        </svg>
+        <strong class="ml-2">Album</strong>
+      </a>
+      <!-- End Logo -->
 
       <!-- Button Responsive -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -43,17 +63,97 @@
     <!-- End Nav -->
   </header>
 
+  <!--Banner rotativo-->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <article class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://fakeimg.pl/500x200/" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://fakeimg.pl/500x200/" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://fakeimg.pl/500x200/" alt="Terceiro Slide">
+      </div>
+    </article>
 
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  </div>
+  <!--End Banner rotativo-->
+
+  <!-- Main -->
+  <main class="mt-4 mb-5">
+    <!-- Container Albuns-->
+    <div class="container">
+      <!-- Row -->
+      <div class="row">
+        <!-- Card -->
+        <section class="col-sm-4">
+          <article class="card">
+            <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
+            <!-- Body -->
+            <div class="card-body">
+              <h5 class="card-title">Baby</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="card-link">Veja mais!</a>
+            </div>
+            <!-- End Body -->
+          </article>
+        </section>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <section class="col-sm-4">
+          <article class="card">
+            <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
+            <!-- Body -->
+            <div class="card-body">
+              <h5 class="card-title">Models</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="card-link">Veja mais!</a>
+            </div>
+            <!-- End Body -->
+          </article>
+        </section>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <section class="col-sm-4">
+          <article class="card">
+            <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
+            <!-- Body -->
+            <div class="card-body">
+              <h5 class="card-title">Family</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class=" card-link">Veja mais!</a>
+            </div>
+            <!-- End Body -->
+          </article>
+        </section>
+        <!-- End Card -->
+
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Container Albuns-->
+  </main>
+  <!-- End Main -->
+
+  <footer>
+
+  </footer>
+
 </body>
 
 </html>
